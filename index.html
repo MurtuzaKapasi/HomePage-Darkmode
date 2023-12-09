@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="" alt="logo">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <img src="moon.png" alt="" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>I'm <span> Murtuza </span>Kapasi</h1>
+            <p>I design and code beautifully simple things, and I love what I do.</p>
+            <a>Download CV</a>
+        </div>
+
+        <div class="img-box">
+            <img src="background.jpeg" alt="shape" class="back-img">
+            <img src="A white, young, smart male student programmer and a laptop on a homepage in an illustrative s (2).png"
+                alt="murtuza" class="front-img">
+        </div>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "sun.png";
+            }else{
+                icon.src = "moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
