@@ -96,6 +96,7 @@ border-radius: 14%;
     height: 55%;
     width: 40%;
 }
+
 .img-box img {
     position: absolute;
     height: 60%;
@@ -114,4 +115,16 @@ border-radius: 14%;
     bottom: 150px;
     left: 420px;
     
+}
+
+
+@media screen and (min-width: 700px){
+    .img-box img {
+        position: absolute;
+        height: 60%;
+        width: 65%;
+        bottom: 150px;
+        transform: translateX(-50%);
+        transition: bottom 1s , left 1s;
+    }
 }
