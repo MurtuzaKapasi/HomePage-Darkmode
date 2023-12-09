@@ -83,14 +83,12 @@ nav ul li a:hover{
     position: absolute;
     bottom: 0;
     right: 100px;
-
 }
 .front-img, .back-img {
 border-radius: 14%;
 }
 .img-box img .back-img{
     height: 65%;
-
 }
 .img-box img .front-img{
     height: 55%;
@@ -101,7 +99,7 @@ border-radius: 14%;
     position: absolute;
     height: 60%;
     left: 70%;
-    width: 45%;
+    width: 300px;
     bottom: 150px;
     transform: translateX(-50%);
     transition: bottom 1s , left 1s;
@@ -114,17 +112,35 @@ border-radius: 14%;
 .img-box:hover .front-img{
     bottom: 150px;
     left: 420px;
-    
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (max-width: 1000px){
+    .img-box{
+        width: 400px;
+    }
     .img-box img {
+        top: 270px;
         position: absolute;
-        height: 60%;
-        width: 65%;
-        bottom: 150px;
+        /* height: 60%; */
+        width: 100%;
+        bottom: 10px;
         transform: translateX(-50%);
         transition: bottom 1s , left 1s;
     }
+
+    .img-box:hover .back-img{
+        bottom: 120px;
+        left: 200px;
+    }
+    .img-box:hover .front-img{
+        bottom: 100px;
+        left: 250px;
+        
+    }
+    .front-img, .back-img {
+        border-radius: 10%;
+        width: 150px;
+        }
+    
 }
